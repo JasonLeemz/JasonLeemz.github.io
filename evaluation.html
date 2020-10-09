@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>李明泽 - 个人评价</title>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <!--<link rel="stylesheet" href="/common/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+<div class="header">
+    <h1>
+        <a href="/">
+            <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="logo">
+        </a>
+    </h1>
+    <div class="search">
+        <input type="text" value="李明泽 个人评价"/>
+        <button>导出简历</button>
+    </div>
+</div>
+<div class="nav clearfix">
+    <ul class="clearfix">
+        <li><a href="/">基本资料</a></li>
+        <li><a href="/career.html">项目经历</a></li>
+        <li class="active">个人评价</li>
+        <li>更多 »</li>
+    </ul>
+</div>
+<div class="wrap profile">
+    <div class="section1">
+        <div class="title-bar">
+            <i class="red"></i>
+            <i class="yello"></i>
+            <i class="green"></i>
+        </div>
+        <div class="portrait">
+            <img src="common/img/jason.jpg" alt="jason">
+        </div>
+        <div class="describe">
+            <ul>
+                <li class="english-name">Jason Lee</li>
+                <li class="subtitle">高级研发工程师 at 北京尔邦传媒有限公司</li>
+                <li>
+                    <p>mingze.li@calli-media.com</p>
+                    <p>QQ:704207999</p>
+                </li>
+            </ul>
+        </div>
+        <pre>
+ _ _ _ __ _ __ _ _
+| '_ \| | | || '_ \
+| |_) | |_| || |_) |
+| .__/| ._  || .__/
+|_|   |_| |_||_|
+        </pre>
+    </div>
+
+    <div class="section2">
+        <div>
+            <div id="chart1"></div>
+            <div id="chart2"></div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+
+    <div class="section3">
+        <div class="line"></div>
+        <p>
+            我是一个比较安静的人，有时候喜欢发呆（其实是在思考 ^_^）。朋友都说我比较内向，其实我偶尔也会很开放...
+        </p>
+        <p>
+            喜欢研究碰到的新事物，不喜欢给自己设置技术边界，每当出现新技术都想尝试尝试。近几年接触了很多前端的东西，
+            但我认为一个服务端开发人员是必须要懂前端技术的，这样才能在工作中跟同事进行更有效的沟通。
+        </p>
+        <p>
+            我希望在有浓厚技术氛围的环境工作，喜欢接触自己不知道的。不喜欢做一个纯粹的执行者。
+            也希望获得更多的机会了解自己未知的领域，期待自身提高。
+        </p>
+        <p>
+            目前的求职意向是寻求一个大厂和有着工程师文化的环境，希望在不短于5年内的时间对专业领域有更深刻的学习和认知。
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+    <ul>
+        <li><a href="/career.html">上一页</a></li>
+        <li><a href="/">1</a></li>
+        <li><a href="/career.html">2</a></li>
+        <li class="active">3</li>
+    </ul>
+</div>
+
+</body>
+<script src="https://s13.cnzz.com/z_stat.php?id=1272851374&web_id=1272851374" language="JavaScript"></script>
+<script src="/common/js/echarts.min.js"></script>
+<script src="common/js/jquery-3.3.1.min.js"></script>
+<script src="common/js/common.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart1 = echarts.init(document.getElementById('chart1'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        legend: {
+            data: ['']
+        },
+        radar: {
+            // shape: 'circle',
+            name: {
+                textStyle: {
+                    color: '#fff',
+                    backgroundColor: '#999',
+                    borderRadius: 3,
+                    padding: [3, 5]
+                }
+            },
+            indicator: [
+                {name: 'PHP', max: 100},
+                {name: 'mysql', max: 100},
+                {name: 'redis', max: 100},
+                {name: 'Linux', max: 100},
+                {name: 'nginx', max: 100},
+                {name: 'Python', max: 100},
+                {name: 'Golang', max: 100}
+            ]
+        },
+        series: [{
+            name: '服务端主要技能',
+            type: 'radar',
+            data: [
+                {
+                    value: [90, 70, 60, 70, 70, 75, 50],
+                    name: '服务端主要技能'
+                }
+            ]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart1.setOption(option);
+</script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart2 = echarts.init(document.getElementById('chart2'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: ''
+        },
+        tooltip: {},
+        legend: {
+            data: ['']
+        },
+        radar: {
+            // shape: 'circle',
+            name: {
+                textStyle: {
+                    color: '#fff',
+                    backgroundColor: '#999',
+                    borderRadius: 3,
+                    padding: [3, 5]
+                }
+            },
+            indicator: [
+                {name: 'HTML', max: 100},
+                {name: 'CSS', max: 100},
+                {name: 'Javascript', max: 100},
+                {name: 'node.js', max: 100},
+                {name: 'vue.js', max: 100},
+                {name: 'React', max: 100},
+                {name: '小程序', max: 100}
+            ]
+        },
+        series: [{
+            name: '服务端主要技能',
+            type: 'radar',
+            itemStyle: {
+                // 点的颜色。
+                color: '#009802'
+            },
+            data: [
+                {
+                    value: [99, 95, 80, 59, 60, 50, 40],
+                    name: '前端主要技能',
+                    lineStyle: {
+                        normal: {
+                            color: '#009802'
+                        }
+                    }
+                }
+            ]
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart2.setOption(option);
+</script>
+</html>
