@@ -18,5 +18,13 @@ func main() {
 		fmt.Println("hello3:", n)
 	}
 	fmt.Println("hello2:", n)
+	fmt.Println("--------------------------")
+	test()
+}
 
+func test() {
+	var i *int
+	i = new(int)
+	*i = 10
+	fmt.Println(*i)
 }
