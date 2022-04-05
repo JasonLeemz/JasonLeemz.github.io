@@ -3,5 +3,5 @@
  */
 
 $(".search button").click(function () {
-    window.open("/common/limingze_resume.pdf")
+    window.open("/common/李明泽.pdf")
 })
