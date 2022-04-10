@@ -10,6 +10,8 @@ func main() {
 	ctx := context.Background()
 	//ctx, cancelFnc := context.WithCancel(ctx) // 用于结束正在运行的任务
 	//cancelFnc()
+	//var ctx context.Context
+	ctx.Value("limingze")
 
 	wg := &sync.WaitGroup{}
 
@@ -43,6 +45,9 @@ func ProductCity(ctx context.Context, wg *sync.WaitGroup, ch chan string) {
 	ch <- "changchun"
 
 	wg.Add(3)
+
+	fmt.Println(ctx)
+	fmt.Println(ctx)
 	//ch <- "meihekou"
 	//ch <- "tieling"
 	//ch <- "shijiazhuang"
