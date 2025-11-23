@@ -1,0 +1,8 @@
+.idea/
+output/
+.statsd/
+*.log
+*.log.*
+go.sum
+log/
+.DS_Store
